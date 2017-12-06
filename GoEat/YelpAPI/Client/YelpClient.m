@@ -7,7 +7,9 @@
 //
 
 #import "YelpClient.h"
+#import "YelpClientPrivate.h"
 
 @implementation YelpClient
+
 
 @end

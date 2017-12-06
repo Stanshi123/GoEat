@@ -6,8 +6,23 @@
 //  Copyright © 2017 Zifan Shi. All rights reserved.
 //
 
-#ifndef YelpClientPrivate_h
-#define YelpClientPrivate_h
+#import "YelpClient.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
-#endif /* YelpClientPrivate_h */
+extern NSString *const kYelpErrorDomain;
+
+@interface YelpClient ()
+
+- (instancetype)initWithAccessToken:(NSString *)accessToken;
+
+- (NSURLRequest *)requestWithPath:(NSString *)path;
+- (NSURLRequest *)requestWithPath:(NSString *)path params:(nullable NSDictionary *)params;
+- (void)queryWithRequest:(NSURLRequest *)request completionHandler:(void (^)(NSDictionary *responseDict, NSError *error))completionHandler;
+
++ (NSCharacterSet *)URLEncodeAllowedCharacters;
++ (NSURLRequest *)authRequestWithAppId:(NSString *)appId secret:(NSString *)secret;
+
+@end
+
+NS_ASSUME_NONNULL_END

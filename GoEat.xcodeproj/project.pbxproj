@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E6D0CDA07F6D23220AEE466 /* libPods-GoEatUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1707632C14247AB6FD0D292 /* libPods-GoEatUITests.a */; };
 		79E19B6E1FD7D8560060EDEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B6D1FD7D8560060EDEC /* AppDelegate.m */; };
 		79E19B711FD7D8560060EDEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B701FD7D8560060EDEC /* ViewController.m */; };
 		79E19B741FD7D8560060EDEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E19B721FD7D8560060EDEC /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		79E19B7C1FD7D8560060EDEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B7B1FD7D8560060EDEC /* main.m */; };
 		79E19B861FD7D8560060EDEC /* GoEatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B851FD7D8560060EDEC /* GoEatTests.m */; };
 		79E19B911FD7D8560060EDEC /* GoEatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B901FD7D8560060EDEC /* GoEatUITests.m */; };
+		A89FE71F19848C320DC2A9AA /* libPods-GoEat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57244A1F108215ABD0D70B56 /* libPods-GoEat.a */; };
+		AF5B2C0BEE7C024D04A8E1F3 /* libPods-GoEatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 352D028809E7E6AFCF791453 /* libPods-GoEatTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FB0E0A0FBCE13113AE0576C /* Pods-GoEat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEat/Pods-GoEat.debug.xcconfig"; sourceTree = "<group>"; };
+		3152B54721A342FB93D3DF50 /* Pods-GoEatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEatTests/Pods-GoEatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		352D028809E7E6AFCF791453 /* libPods-GoEatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0DFD50D818A64A68E286DB /* Pods-GoEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEat/Pods-GoEat.release.xcconfig"; sourceTree = "<group>"; };
+		57244A1F108215ABD0D70B56 /* libPods-GoEat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7367518CA6A4F57AE45DD7D9 /* Pods-GoEatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEatUITests/Pods-GoEatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		79E19B691FD7D8560060EDEC /* GoEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E19B6C1FD7D8560060EDEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79E19B6D1FD7D8560060EDEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +60,9 @@
 		79E19B8C1FD7D8560060EDEC /* GoEatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoEatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E19B901FD7D8560060EDEC /* GoEatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoEatUITests.m; sourceTree = "<group>"; };
 		79E19B921FD7D8560060EDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5CE6A2D04C8B36FA53F232B /* Pods-GoEatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEatTests/Pods-GoEatTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1707632C14247AB6FD0D292 /* libPods-GoEatUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEatUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F994EBD32D62B29AEB8186D9 /* Pods-GoEatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEatUITests/Pods-GoEatUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89FE71F19848C320DC2A9AA /* libPods-GoEat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5B2C0BEE7C024D04A8E1F3 /* libPods-GoEatTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6D0CDA07F6D23220AEE466 /* libPods-GoEatUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				79E19B841FD7D8560060EDEC /* GoEatTests */,
 				79E19B8F1FD7D8560060EDEC /* GoEatUITests */,
 				79E19B6A1FD7D8560060EDEC /* Products */,
+				C77293B09577B891703AC7F0 /* Pods */,
+				D2AF3DF4B04A360CFD4FBFE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +149,29 @@
 			path = GoEatUITests;
 			sourceTree = "<group>";
 		};
+		C77293B09577B891703AC7F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FB0E0A0FBCE13113AE0576C /* Pods-GoEat.debug.xcconfig */,
+				4B0DFD50D818A64A68E286DB /* Pods-GoEat.release.xcconfig */,
+				3152B54721A342FB93D3DF50 /* Pods-GoEatTests.debug.xcconfig */,
+				B5CE6A2D04C8B36FA53F232B /* Pods-GoEatTests.release.xcconfig */,
+				7367518CA6A4F57AE45DD7D9 /* Pods-GoEatUITests.debug.xcconfig */,
+				F994EBD32D62B29AEB8186D9 /* Pods-GoEatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2AF3DF4B04A360CFD4FBFE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57244A1F108215ABD0D70B56 /* libPods-GoEat.a */,
+				352D028809E7E6AFCF791453 /* libPods-GoEatTests.a */,
+				E1707632C14247AB6FD0D292 /* libPods-GoEatUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E19B951FD7D8560060EDEC /* Build configuration list for PBXNativeTarget "GoEat" */;
 			buildPhases = (
+				9CAB2EEA22F949567DAA54CC /* [CP] Check Pods Manifest.lock */,
 				79E19B651FD7D8560060EDEC /* Sources */,
 				79E19B661FD7D8560060EDEC /* Frameworks */,
 				79E19B671FD7D8560060EDEC /* Resources */,
+				EDC6BBDC10090C2C3740FF79 /* [CP] Embed Pods Frameworks */,
+				4D8FF123682DDCC2CEF87D95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E19B981FD7D8560060EDEC /* Build configuration list for PBXNativeTarget "GoEatTests" */;
 			buildPhases = (
+				A7637232D5180A3D7ECC975B /* [CP] Check Pods Manifest.lock */,
 				79E19B7D1FD7D8560060EDEC /* Sources */,
 				79E19B7E1FD7D8560060EDEC /* Frameworks */,
 				79E19B7F1FD7D8560060EDEC /* Resources */,
+				B9708EBB3A5D836F934074C8 /* [CP] Embed Pods Frameworks */,
+				FCC413DE90FFE271089D171F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E19B9B1FD7D8560060EDEC /* Build configuration list for PBXNativeTarget "GoEatUITests" */;
 			buildPhases = (
+				237763E50C9E7E63CEDD2F3D /* [CP] Check Pods Manifest.lock */,
 				79E19B881FD7D8560060EDEC /* Sources */,
 				79E19B891FD7D8560060EDEC /* Frameworks */,
 				79E19B8A1FD7D8560060EDEC /* Resources */,
+				83908825D30A738933CFBB7F /* [CP] Embed Pods Frameworks */,
+				D6204BDA36E341EF69188C80 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +308,153 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		237763E50C9E7E63CEDD2F3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoEatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D8FF123682DDCC2CEF87D95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEat/Pods-GoEat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83908825D30A738933CFBB7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEatUITests/Pods-GoEatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CAB2EEA22F949567DAA54CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoEat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7637232D5180A3D7ECC975B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoEatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9708EBB3A5D836F934074C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEatTests/Pods-GoEatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6204BDA36E341EF69188C80 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEatUITests/Pods-GoEatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDC6BBDC10090C2C3740FF79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEat/Pods-GoEat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC413DE90FFE271089D171F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEatTests/Pods-GoEatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79E19B651FD7D8560060EDEC /* Sources */ = {
@@ -428,9 +624,11 @@
 		};
 		79E19B961FD7D8560060EDEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB0E0A0FBCE13113AE0576C /* Pods-GoEat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HDRCV7PY3;
 				INFOPLIST_FILE = GoEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zifanshi.GoEat;
@@ -441,9 +639,11 @@
 		};
 		79E19B971FD7D8560060EDEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0DFD50D818A64A68E286DB /* Pods-GoEat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HDRCV7PY3;
 				INFOPLIST_FILE = GoEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zifanshi.GoEat;
@@ -454,6 +654,7 @@
 		};
 		79E19B991FD7D8560060EDEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3152B54721A342FB93D3DF50 /* Pods-GoEatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +669,7 @@
 		};
 		79E19B9A1FD7D8560060EDEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5CE6A2D04C8B36FA53F232B /* Pods-GoEatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +684,7 @@
 		};
 		79E19B9C1FD7D8560060EDEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7367518CA6A4F57AE45DD7D9 /* Pods-GoEatUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GoEatUITests/Info.plist;
@@ -495,6 +698,7 @@
 		};
 		79E19B9D1FD7D8560060EDEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F994EBD32D62B29AEB8186D9 /* Pods-GoEatUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GoEatUITests/Info.plist;
