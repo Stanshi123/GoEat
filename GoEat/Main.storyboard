@@ -36,6 +36,9 @@
                     <navigationItem key="navigationItem" title="Food Preference" id="kr9-Um-Kre">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ViA-m6-S1i"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addPreference" destination="kr9-Um-Kre" id="2Es-MI-awc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4X-9S-cjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

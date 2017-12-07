@@ -9,6 +9,8 @@
 #import "PreferenceTableViewController.h"
 
 @interface PreferenceTableViewController ()
+@property (weak, nonatomic) IBOutlet UINavigationItem *addPreference;
+
 
 @end
 
@@ -21,7 +23,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
