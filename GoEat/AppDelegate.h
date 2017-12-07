@@ -6,12 +6,16 @@
 //  Copyright © 2017 Zifan Shi. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import Foundation;
+
+@class YLPClient;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (YLPClient*) sharedClient;
 
 @end
 

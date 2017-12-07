@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GoEatViewController.h
 //  GoEat
 //
 //  Created by Zifan Shi on 12/5/17.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GoEatViewController : UIViewController
 
 @end
 

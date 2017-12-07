@@ -6,7 +6,7 @@ target 'GoEat' do
   # use_frameworks!
 
   # Pods for GoEat
-  pod "YelpAPI"
+  pod 'YelpAPI'
 
   target 'GoEatTests' do
     inherit! :search_paths

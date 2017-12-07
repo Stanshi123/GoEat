@@ -8,15 +8,27 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+@import YelpAPI;
 
+@interface AppDelegate ()
+@property (strong, nonatomic) YLPClient *client;
 @end
 
 @implementation AppDelegate
 
++ (YLPClient *) sharedClient {
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    return appDelegate.client;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // v3 search key for yelp API
+    [YLPClient authorizeWithAppId:@"ywfwpY5Pmbd4fmoP1XPJ4Q" secret:@"hVXVxGq6k6zyzvxOLG4I473paY5kxoKTFwyV74Cqernvw3FZSr2nYqqm9whvsvNf" completionHandler:^(YLPClient *client, NSError *error) {
+        self.client = client;
+        if (!client) {
+            NSLog(@"Authentication failed: %@", error);
+        }
+    }];
     return YES;
 }
 
