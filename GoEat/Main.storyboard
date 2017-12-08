@@ -85,7 +85,7 @@
         <!--Map-->
         <scene sceneID="zHM-FV-GkC">
             <objects>
-                <viewController id="4ya-yF-xts" sceneMemberID="viewController">
+                <viewController id="4ya-yF-xts" customClass="MapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FhS-jn-w8z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,6 +104,9 @@
                         <viewLayoutGuide key="safeArea" id="FKv-ZW-ZGS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" selectedImage="map" id="119-OM-Nsa"/>
+                    <connections>
+                        <outlet property="mapView" destination="Pza-Kl-Xss" id="pH8-n3-wh4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VbA-4I-NpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,10 +122,14 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXi-us-C5u">
                                 <rect key="frame" x="90" y="488" width="195" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Go EAT!">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="goEatTabbed:" destination="i57-lx-5OA" eventType="touchUpInside" id="8FJ-GS-h5G"/>
+                                </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kll-0w-e2Q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="456"/>
@@ -140,13 +147,16 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIF-wx-TcJ">
                                 <rect key="frame" x="90" y="526" width="195" height="30"/>
-                                <state key="normal" title="View Other Restaurants"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="View Other Restaurants">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="upO-a1-Hb5" kind="show" id="d5F-Zt-OWJ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="kll-0w-e2Q" firstAttribute="leading" secondItem="2BA-nd-5dT" secondAttribute="leading" id="88l-LH-ZGU"/>
                             <constraint firstItem="bGO-7m-ISS" firstAttribute="top" secondItem="dIF-wx-TcJ" secondAttribute="bottom" constant="8" id="AwV-Tc-ySN"/>

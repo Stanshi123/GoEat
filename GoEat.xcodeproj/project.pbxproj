@@ -9,14 +9,22 @@
 /* Begin PBXBuildFile section */
 		3EF470EF4F4FC3E71856241B /* libPods-GoEatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1952F5E28DB1EAB23CDB105F /* libPods-GoEatTests.a */; };
 		699473B432ABB80D62048E8F /* libPods-GoEatUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A32C2AFF5FBF035B7E41EEA6 /* libPods-GoEatUITests.a */; };
-		79710A051FD93010006B1F44 /* YelpAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79710A031FD92E49006B1F44 /* YelpAPI.framework */; };
-		79710A061FD93010006B1F44 /* YelpAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79710A031FD92E49006B1F44 /* YelpAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79710A0A1FD9CEE2006B1F44 /* PreferenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79710A091FD9CEE2006B1F44 /* PreferenceModel.m */; };
 		79710A0F1FDA0764006B1F44 /* PreferencesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79710A0E1FDA0764006B1F44 /* PreferencesTableViewController.m */; };
+		79BDE09E1FDA1AAA00487ABE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BDE09D1FDA1AAA00487ABE /* MapKit.framework */; };
+		79BDE0A11FDA1B0700487ABE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDE09F1FDA1B0700487ABE /* main.m */; };
+		79BDE0A21FDA1B0700487ABE /* mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 79BDE0A01FDA1B0700487ABE /* mark.png */; };
+		79BDE0A51FDA1B6900487ABE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BDE0A41FDA1B6900487ABE /* CoreLocation.framework */; };
+		79BDE0A71FDA1B7400487ABE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BDE0A61FDA1B7300487ABE /* Foundation.framework */; };
+		79BDE0A91FDA1B7E00487ABE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BDE0A81FDA1B7E00487ABE /* CoreGraphics.framework */; };
+		79BDE0AB1FDA1B8400487ABE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BDE0AA1FDA1B8400487ABE /* UIKit.framework */; };
+		79BDE0AE1FDA1BDD00487ABE /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDE0AD1FDA1BDD00487ABE /* MapAnnotation.m */; };
+		79BDE0B11FDA1E7E00487ABE /* MapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDE0B01FDA1E7E00487ABE /* MapAnnotationView.m */; };
+		79BDE0B41FDA1EF800487ABE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDE0B31FDA1EF800487ABE /* MapViewController.m */; };
+		79BDE0BA1FDA220F00487ABE /* BusinessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDE0B91FDA220F00487ABE /* BusinessModel.m */; };
 		79E19B6E1FD7D8560060EDEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B6D1FD7D8560060EDEC /* AppDelegate.m */; };
 		79E19B711FD7D8560060EDEC /* GoEatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B701FD7D8560060EDEC /* GoEatViewController.m */; };
 		79E19B761FD7D8560060EDEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E19B751FD7D8560060EDEC /* Assets.xcassets */; };
-		79E19B7C1FD7D8560060EDEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B7B1FD7D8560060EDEC /* main.m */; };
 		79E19B861FD7D8560060EDEC /* GoEatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B851FD7D8560060EDEC /* GoEatTests.m */; };
 		79E19B911FD7D8560060EDEC /* GoEatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B901FD7D8560060EDEC /* GoEatUITests.m */; };
 		79E19BAA1FD879780060EDEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E19BA91FD879780060EDEC /* LaunchScreen.storyboard */; };
@@ -50,7 +58,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				79710A061FD93010006B1F44 /* YelpAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,10 +69,24 @@
 		34D8731E57647151F0D4E05E /* Pods-GoEatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEatUITests/Pods-GoEatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4570C06CCD33002B0753328C /* libPods-GoEat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64817C81D42FF9B9CE76B1C9 /* Pods-GoEatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEatTests/Pods-GoEatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		79710A031FD92E49006B1F44 /* YelpAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YelpAPI.framework; sourceTree = "<group>"; };
 		79710A081FD9CEE2006B1F44 /* PreferenceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferenceModel.h; sourceTree = "<group>"; };
 		79710A091FD9CEE2006B1F44 /* PreferenceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferenceModel.m; sourceTree = "<group>"; };
 		79710A0E1FDA0764006B1F44 /* PreferencesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesTableViewController.m; sourceTree = "<group>"; };
+		79BDE09D1FDA1AAA00487ABE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		79BDE09F1FDA1B0700487ABE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79BDE0A01FDA1B0700487ABE /* mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark.png; sourceTree = "<group>"; };
+		79BDE0A41FDA1B6900487ABE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		79BDE0A61FDA1B7300487ABE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79BDE0A81FDA1B7E00487ABE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79BDE0AA1FDA1B8400487ABE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79BDE0AC1FDA1BDD00487ABE /* MapAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		79BDE0AD1FDA1BDD00487ABE /* MapAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		79BDE0AF1FDA1E7E00487ABE /* MapAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapAnnotationView.h; sourceTree = "<group>"; };
+		79BDE0B01FDA1E7E00487ABE /* MapAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapAnnotationView.m; sourceTree = "<group>"; };
+		79BDE0B21FDA1EF800487ABE /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		79BDE0B31FDA1EF800487ABE /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		79BDE0B81FDA220E00487ABE /* BusinessModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BusinessModel.h; path = /Users/zifanshi/Documents/GoEat/GoEat/Model/BusinessModel.h; sourceTree = "<absolute>"; };
+		79BDE0B91FDA220F00487ABE /* BusinessModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BusinessModel.m; path = /Users/zifanshi/Documents/GoEat/GoEat/Model/BusinessModel.m; sourceTree = "<absolute>"; };
 		79E19B691FD7D8560060EDEC /* GoEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E19B6C1FD7D8560060EDEC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79E19B6D1FD7D8560060EDEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,7 +94,6 @@
 		79E19B701FD7D8560060EDEC /* GoEatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoEatViewController.m; sourceTree = "<group>"; };
 		79E19B751FD7D8560060EDEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79E19B7A1FD7D8560060EDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79E19B7B1FD7D8560060EDEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		79E19B811FD7D8560060EDEC /* GoEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E19B851FD7D8560060EDEC /* GoEatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoEatTests.m; sourceTree = "<group>"; };
 		79E19B871FD7D8560060EDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,8 +119,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BDE0AB1FDA1B8400487ABE /* UIKit.framework in Frameworks */,
+				79BDE0A91FDA1B7E00487ABE /* CoreGraphics.framework in Frameworks */,
+				79BDE0A71FDA1B7400487ABE /* Foundation.framework in Frameworks */,
+				79BDE0A51FDA1B6900487ABE /* CoreLocation.framework in Frameworks */,
+				79BDE09E1FDA1AAA00487ABE /* MapKit.framework in Frameworks */,
 				79E19BB41FD900CF0060EDEC /* WebKit.framework in Frameworks */,
-				79710A051FD93010006B1F44 /* YelpAPI.framework in Frameworks */,
 				D93E45879756B4174506707D /* libPods-GoEat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +148,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79BDE09C1FDA1A5100487ABE /* MapAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				79BDE0AC1FDA1BDD00487ABE /* MapAnnotation.h */,
+				79BDE0AD1FDA1BDD00487ABE /* MapAnnotation.m */,
+				79BDE0AF1FDA1E7E00487ABE /* MapAnnotationView.h */,
+				79BDE0B01FDA1E7E00487ABE /* MapAnnotationView.m */,
+			);
+			path = MapAnnotation;
+			sourceTree = "<group>";
+		};
+		79BDE0A31FDA1B3600487ABE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E19B7A1FD7D8560060EDEC /* Info.plist */,
+				79BDE09F1FDA1B0700487ABE /* main.m */,
+				79BDE0A01FDA1B0700487ABE /* mark.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79BDE0BB1FDA221600487ABE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79BDE0B81FDA220E00487ABE /* BusinessModel.h */,
+				79BDE0B91FDA220F00487ABE /* BusinessModel.m */,
+				79710A081FD9CEE2006B1F44 /* PreferenceModel.h */,
+				79710A091FD9CEE2006B1F44 /* PreferenceModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		79E19B601FD7D8560060EDEC = {
 			isa = PBXGroup;
 			children = (
@@ -149,16 +205,15 @@
 		79E19B6B1FD7D8560060EDEC /* GoEat */ = {
 			isa = PBXGroup;
 			children = (
+				79BDE0BB1FDA221600487ABE /* Model */,
+				79BDE0A31FDA1B3600487ABE /* Supporting Files */,
+				79BDE09C1FDA1A5100487ABE /* MapAnnotation */,
 				79E19BBB1FD911FA0060EDEC /* ViewControllers */,
 				79E19BAB1FD87A260060EDEC /* Main.storyboard */,
 				79E19BA91FD879780060EDEC /* LaunchScreen.storyboard */,
 				79E19B6C1FD7D8560060EDEC /* AppDelegate.h */,
 				79E19B6D1FD7D8560060EDEC /* AppDelegate.m */,
 				79E19B751FD7D8560060EDEC /* Assets.xcassets */,
-				79E19B7A1FD7D8560060EDEC /* Info.plist */,
-				79E19B7B1FD7D8560060EDEC /* main.m */,
-				79710A081FD9CEE2006B1F44 /* PreferenceModel.h */,
-				79710A091FD9CEE2006B1F44 /* PreferenceModel.m */,
 			);
 			path = GoEat;
 			sourceTree = "<group>";
@@ -190,6 +245,8 @@
 				79E19BB91FD9118B0060EDEC /* RestaurantViewController.m */,
 				79E19B6F1FD7D8560060EDEC /* GoEatViewController.h */,
 				79E19B701FD7D8560060EDEC /* GoEatViewController.m */,
+				79BDE0B21FDA1EF800487ABE /* MapViewController.h */,
+				79BDE0B31FDA1EF800487ABE /* MapViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,7 +267,11 @@
 		D2AF3DF4B04A360CFD4FBFE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				79710A031FD92E49006B1F44 /* YelpAPI.framework */,
+				79BDE0AA1FDA1B8400487ABE /* UIKit.framework */,
+				79BDE0A81FDA1B7E00487ABE /* CoreGraphics.framework */,
+				79BDE0A61FDA1B7300487ABE /* Foundation.framework */,
+				79BDE0A41FDA1B6900487ABE /* CoreLocation.framework */,
+				79BDE09D1FDA1AAA00487ABE /* MapKit.framework */,
 				79E19BC01FD92B1C0060EDEC /* libYelpAPI.a */,
 				79E19BB31FD900CE0060EDEC /* WebKit.framework */,
 				4570C06CCD33002B0753328C /* libPods-GoEat.a */,
@@ -338,6 +399,7 @@
 			files = (
 				79E19BAA1FD879780060EDEC /* LaunchScreen.storyboard in Resources */,
 				79E19B761FD7D8560060EDEC /* Assets.xcassets in Resources */,
+				79BDE0A21FDA1B0700487ABE /* mark.png in Resources */,
 				79E19BAC1FD87A270060EDEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,10 +574,14 @@
 			files = (
 				79710A0A1FD9CEE2006B1F44 /* PreferenceModel.m in Sources */,
 				79E19B711FD7D8560060EDEC /* GoEatViewController.m in Sources */,
+				79BDE0B11FDA1E7E00487ABE /* MapAnnotationView.m in Sources */,
+				79BDE0BA1FDA220F00487ABE /* BusinessModel.m in Sources */,
+				79BDE0B41FDA1EF800487ABE /* MapViewController.m in Sources */,
 				79710A0F1FDA0764006B1F44 /* PreferencesTableViewController.m in Sources */,
-				79E19B7C1FD7D8560060EDEC /* main.m in Sources */,
 				79E19B6E1FD7D8560060EDEC /* AppDelegate.m in Sources */,
+				79BDE0A11FDA1B0700487ABE /* main.m in Sources */,
 				79E19BBA1FD9118B0060EDEC /* RestaurantViewController.m in Sources */,
+				79BDE0AE1FDA1BDD00487ABE /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +737,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zifanshi.GoEat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -691,7 +757,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zifanshi.GoEat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

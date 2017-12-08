@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/*
 @class YLPClient;
 @class YLPSearch;
-
+*/
 @interface RestaurantViewController : UITableViewController
 
 @end

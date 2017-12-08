@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface GoEatViewController : UIViewController
+@interface GoEatViewController : UIViewController <CLLocationManagerDelegate>
 
 @end
 

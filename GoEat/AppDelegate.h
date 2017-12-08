@@ -9,6 +9,8 @@
 @import UIKit;
 @import Foundation;
 
+@import YelpAPI;
+
 @class YLPClient;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

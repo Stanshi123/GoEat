@@ -8,8 +8,6 @@
 
 #import "AppDelegate.h"
 
-@import YelpAPI;
-
 @interface AppDelegate ()
 @property (strong, nonatomic) YLPClient *client;
 @end

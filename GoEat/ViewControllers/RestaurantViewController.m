@@ -7,14 +7,10 @@
 //
 
 #import "RestaurantViewController.h"
-#import "AppDelegate.h"
-#import <YelpAPI/YLPClient+Search.h>
-#import <YelpAPI/YLPSortType.h>
-#import <YelpAPI/YLPSearch.h>
-#import <YelpAPI/YLPBusiness.h>
+#import "BusinessModel.h"
 
 @interface RestaurantViewController ()
-@property (nonatomic) YLPSearch *search;
+@property (strong, nonatomic) BusinessModel *dataModel;
 @end
 
 @implementation RestaurantViewController
@@ -22,14 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[AppDelegate sharedClient] searchWithLocation:@"San Francisco, CA" term:nil limit:5 offset:0 sort:YLPSortTypeDistance completionHandler:^
-     (YLPSearch *search, NSError* error) {
-         self.search = search;
-         dispatch_async(dispatch_get_main_queue(), ^{
-             [self.tableView reloadData];
-         });
-     }];
-    
+    self.dataModel = [BusinessModel sharedModel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,24 +33,24 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 20;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Restaurant Cell" forIndexPath:indexPath];
     
-    if (indexPath.item > [self.search.businesses count]) {
+    if (indexPath.item > [_dataModel numberOfBusiness]) {
         cell.textLabel.text = @"";
     }
     else {
-        cell.textLabel.text = self.search.businesses[indexPath.item].name;
+        //cell.textLabel.text = self.search.businesses[indexPath.item].name;
+        cell.textLabel.text = [_dataModel businessAtIndex:indexPath.item].name;
     }
     
     return cell;
 
 }
-
 
 /*
 // Override to support conditional editing of the table view.
