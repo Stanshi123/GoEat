@@ -8,6 +8,8 @@
 
 #import "RestaurantViewController.h"
 #import "BusinessModel.h"
+#import "RestaurantTableCellTableViewCell.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface RestaurantViewController ()
 @property (strong, nonatomic) BusinessModel *dataModel;
@@ -38,14 +40,27 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Restaurant Cell" forIndexPath:indexPath];
+    RestaurantTableCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Restaurant Cell" forIndexPath:indexPath];
     
     if (indexPath.item > [_dataModel numberOfBusiness]) {
-        cell.textLabel.text = @"";
+        cell.image.image = nil;
+        cell.name.text = @"";
+        cell.rating.text = @"";
+        cell.categoryName.text = @"";
+        
     }
     else {
+        YLPBusiness *business = [_dataModel businessAtIndex:indexPath.row];
         //cell.textLabel.text = self.search.businesses[indexPath.item].name;
-        cell.textLabel.text = [_dataModel businessAtIndex:indexPath.item].name;
+        [cell.image setImageWithURL:business.imageURL];
+        cell.name.text = business.name;
+        cell.rating.text = [NSString stringWithFormat:@"rating: %.f", business.rating];
+        NSString* categories = @"";
+        for (YLPCategory *cate in business.categories) {
+            categories = [categories stringByAppendingString:cate.name];
+            categories = [categories stringByAppendingString:@", "];
+        }
+        cell.categoryName.text = categories;
     }
     
     return cell;

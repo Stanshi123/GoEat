@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3EF470EF4F4FC3E71856241B /* libPods-GoEatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1952F5E28DB1EAB23CDB105F /* libPods-GoEatTests.a */; };
 		699473B432ABB80D62048E8F /* libPods-GoEatUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A32C2AFF5FBF035B7E41EEA6 /* libPods-GoEatUITests.a */; };
+		79039D4F1FDA8FEC002F8717 /* RestaurantTableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79039D4E1FDA8FEC002F8717 /* RestaurantTableCellTableViewCell.m */; };
 		79710A0A1FD9CEE2006B1F44 /* PreferenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79710A091FD9CEE2006B1F44 /* PreferenceModel.m */; };
 		79710A0F1FDA0764006B1F44 /* PreferencesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79710A0E1FDA0764006B1F44 /* PreferencesTableViewController.m */; };
 		79BDE09E1FDA1AAA00487ABE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BDE09D1FDA1AAA00487ABE /* MapKit.framework */; };
@@ -69,6 +70,8 @@
 		34D8731E57647151F0D4E05E /* Pods-GoEatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEatUITests/Pods-GoEatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4570C06CCD33002B0753328C /* libPods-GoEat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64817C81D42FF9B9CE76B1C9 /* Pods-GoEatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEatTests/Pods-GoEatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79039D4D1FDA8FEC002F8717 /* RestaurantTableCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestaurantTableCellTableViewCell.h; sourceTree = "<group>"; };
+		79039D4E1FDA8FEC002F8717 /* RestaurantTableCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestaurantTableCellTableViewCell.m; sourceTree = "<group>"; };
 		79710A081FD9CEE2006B1F44 /* PreferenceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferenceModel.h; sourceTree = "<group>"; };
 		79710A091FD9CEE2006B1F44 /* PreferenceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferenceModel.m; sourceTree = "<group>"; };
 		79710A0E1FDA0764006B1F44 /* PreferencesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesTableViewController.m; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				79E19B701FD7D8560060EDEC /* GoEatViewController.m */,
 				79BDE0B21FDA1EF800487ABE /* MapViewController.h */,
 				79BDE0B31FDA1EF800487ABE /* MapViewController.m */,
+				79039D4D1FDA8FEC002F8717 /* RestaurantTableCellTableViewCell.h */,
+				79039D4E1FDA8FEC002F8717 /* RestaurantTableCellTableViewCell.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 			files = (
 				79710A0A1FD9CEE2006B1F44 /* PreferenceModel.m in Sources */,
 				79E19B711FD7D8560060EDEC /* GoEatViewController.m in Sources */,
+				79039D4F1FDA8FEC002F8717 /* RestaurantTableCellTableViewCell.m in Sources */,
 				79BDE0B11FDA1E7E00487ABE /* MapAnnotationView.m in Sources */,
 				79BDE0BA1FDA220F00487ABE /* BusinessModel.m in Sources */,
 				79BDE0B41FDA1EF800487ABE /* MapViewController.m in Sources */,
@@ -734,6 +740,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GoEat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zifanshi.GoEat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -754,6 +761,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GoEat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zifanshi.GoEat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
