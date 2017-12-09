@@ -23,6 +23,7 @@
 		79BDE0B11FDA1E7E00487ABE /* MapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDE0B01FDA1E7E00487ABE /* MapAnnotationView.m */; };
 		79BDE0B41FDA1EF800487ABE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDE0B31FDA1EF800487ABE /* MapViewController.m */; };
 		79BDE0BA1FDA220F00487ABE /* BusinessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDE0B91FDA220F00487ABE /* BusinessModel.m */; };
+		79CA256B1FDBBB8E00FE0E55 /* RestaurantWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA256A1FDBBB8E00FE0E55 /* RestaurantWebViewViewController.m */; };
 		79E19B6E1FD7D8560060EDEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B6D1FD7D8560060EDEC /* AppDelegate.m */; };
 		79E19B711FD7D8560060EDEC /* GoEatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E19B701FD7D8560060EDEC /* GoEatViewController.m */; };
 		79E19B761FD7D8560060EDEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E19B751FD7D8560060EDEC /* Assets.xcassets */; };
@@ -90,6 +91,8 @@
 		79BDE0B31FDA1EF800487ABE /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		79BDE0B81FDA220E00487ABE /* BusinessModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BusinessModel.h; path = /Users/zifanshi/Documents/GoEat/GoEat/Model/BusinessModel.h; sourceTree = "<absolute>"; };
 		79BDE0B91FDA220F00487ABE /* BusinessModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BusinessModel.m; path = /Users/zifanshi/Documents/GoEat/GoEat/Model/BusinessModel.m; sourceTree = "<absolute>"; };
+		79CA25691FDBBB8E00FE0E55 /* RestaurantWebViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestaurantWebViewViewController.h; sourceTree = "<group>"; };
+		79CA256A1FDBBB8E00FE0E55 /* RestaurantWebViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestaurantWebViewViewController.m; sourceTree = "<group>"; };
 		79E19B691FD7D8560060EDEC /* GoEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E19B6C1FD7D8560060EDEC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79E19B6D1FD7D8560060EDEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 		79E19BBB1FD911FA0060EDEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				79CA25691FDBBB8E00FE0E55 /* RestaurantWebViewViewController.h */,
+				79CA256A1FDBBB8E00FE0E55 /* RestaurantWebViewViewController.m */,
 				79E19BB51FD910C50060EDEC /* PreferencesTableViewController.h */,
 				79710A0E1FDA0764006B1F44 /* PreferencesTableViewController.m */,
 				79E19BB81FD9118B0060EDEC /* RestaurantViewController.h */,
@@ -588,6 +593,7 @@
 				79BDE0A11FDA1B0700487ABE /* main.m in Sources */,
 				79E19BBA1FD9118B0060EDEC /* RestaurantViewController.m in Sources */,
 				79BDE0AE1FDA1BDD00487ABE /* MapAnnotation.m in Sources */,
+				79CA256B1FDBBB8E00FE0E55 /* RestaurantWebViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

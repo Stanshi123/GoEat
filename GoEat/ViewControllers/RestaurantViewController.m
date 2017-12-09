@@ -10,6 +10,7 @@
 #import "BusinessModel.h"
 #import "RestaurantTableCellTableViewCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "RestaurantWebViewViewController.h"
 
 @interface RestaurantViewController ()
 @property (strong, nonatomic) BusinessModel *dataModel;
@@ -19,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.tableView.rowHeight = 100;
     self.dataModel = [BusinessModel sharedModel];
 }
 
@@ -51,14 +52,18 @@
     }
     else {
         YLPBusiness *business = [_dataModel businessAtIndex:indexPath.row];
+        cell.bussiness = business;
         //cell.textLabel.text = self.search.businesses[indexPath.item].name;
         [cell.image setImageWithURL:business.imageURL];
         cell.name.text = business.name;
         cell.rating.text = [NSString stringWithFormat:@"rating: %.f", business.rating];
         NSString* categories = @"";
-        for (YLPCategory *cate in business.categories) {
+        for (int i = 0; i < [business.categories count]; i++) {
+            YLPCategory *cate = business.categories[i];
             categories = [categories stringByAppendingString:cate.name];
-            categories = [categories stringByAppendingString:@", "];
+            if (i != [business.categories count] - 1) {
+                categories = [categories stringByAppendingString:@", "];
+            }
         }
         cell.categoryName.text = categories;
     }
@@ -101,14 +106,20 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    RestaurantWebViewViewController *webVC = [segue destinationViewController];
+    
+    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+    RestaurantTableCellTableViewCell *selectedCell  = [self.tableView cellForRowAtIndexPath:selectedIndexPath];
+    webVC.url = selectedCell.bussiness.URL;
+    
 }
-*/
+
 
 @end

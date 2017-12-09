@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <YelpAPI/YLPBusiness.h>
 
 @interface RestaurantTableCellTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *rating;
 @property (weak, nonatomic) IBOutlet UILabel *categoryName;
+@property (strong, nonatomic) YLPBusiness *bussiness;
 @end

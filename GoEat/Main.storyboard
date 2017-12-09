@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UGZ-Nf-4Ba">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UGZ-Nf-4Ba">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -254,6 +254,7 @@
                                     <outlet property="image" destination="Lhc-YJ-OUo" id="cm8-zD-lSu"/>
                                     <outlet property="name" destination="4G0-3m-37Y" id="rF0-fE-ztJ"/>
                                     <outlet property="rating" destination="qHN-Di-UyO" id="Xsp-pZ-wBy"/>
+                                    <segue destination="o3C-94-9Kb" kind="show" id="3fP-Ig-QHa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -267,7 +268,41 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Kw-yI-bTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2652" y="1220.2398800599701"/>
+            <point key="canvasLocation" x="2513" y="1220"/>
+        </scene>
+        <!--Restaurant Web View View Controller-->
+        <scene sceneID="ba4-BV-wr7">
+            <objects>
+                <viewController id="o3C-94-9Kb" customClass="RestaurantWebViewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xCf-Dt-t7r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOL-ec-UQT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eOL-ec-UQT" firstAttribute="bottom" secondItem="DPv-m8-3A8" secondAttribute="bottom" id="EBr-Jy-x3l"/>
+                            <constraint firstItem="eOL-ec-UQT" firstAttribute="trailing" secondItem="DPv-m8-3A8" secondAttribute="trailing" id="Tjy-5c-6MX"/>
+                            <constraint firstItem="eOL-ec-UQT" firstAttribute="leading" secondItem="DPv-m8-3A8" secondAttribute="leading" id="bF7-bL-P3s"/>
+                            <constraint firstItem="eOL-ec-UQT" firstAttribute="top" secondItem="DPv-m8-3A8" secondAttribute="top" id="p5f-52-9ae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DPv-m8-3A8"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="eOL-ec-UQT" id="1ne-JH-EDQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDb-up-8Kd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3423" y="1219"/>
         </scene>
         <!--GoEat!-->
         <scene sceneID="YDR-rB-pxk">
